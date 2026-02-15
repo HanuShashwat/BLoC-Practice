@@ -41,7 +41,7 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: Column(
-        crossAxisAlignment: ,
+        mainAxisAlignment: .end,
         children: [
           FloatingActionButton(
             onPressed: () {
@@ -50,9 +50,12 @@ class _MyHomePageState extends State<MyHomePage> {
             tooltip: 'Increment',
             child: const Icon(Icons.add),
           ),
+          SizedBox(
+            height: 12,
+          ),
           FloatingActionButton(
             onPressed: () {
-              counterCubit.increament();
+              counterCubit.decrement();
             },
             tooltip: 'Decrement',
             child: const Icon(Icons.minimize),
