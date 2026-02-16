@@ -9,6 +9,7 @@ class IncDecPage extends StatelessWidget {
   Widget build(BuildContext context) {
     final counterBloc = BlocProvider.of<CounterBloc>(context);
     return Scaffold(
+      appBar: AppBar(),
       floatingActionButton: Column(
         mainAxisAlignment: .end,
         children: [
